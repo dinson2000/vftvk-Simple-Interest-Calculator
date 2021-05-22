@@ -10,7 +10,8 @@ function compute()
     years = document.getElementById("years").value;
     if(principal==""){
         alert("Enter a number:")
-    }else if(principal>0){
+    }
+     if(principal<0){
         alert("Enter a Positive number:")
     }
     else{
