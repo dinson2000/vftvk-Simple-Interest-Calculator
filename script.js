@@ -9,7 +9,7 @@ function compute()
     range = document.getElementById("rate").value;
     years = document.getElementById("years").value;
     if(principal=="" || principal<0){
-        alert("Enter a number:")
+        alert("Enter a Valid Number:")
     }
     else{
 
