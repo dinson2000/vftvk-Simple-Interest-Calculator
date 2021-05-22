@@ -8,11 +8,8 @@ function compute()
     principal = document.getElementById("principal").value;
     range = document.getElementById("rate").value;
     years = document.getElementById("years").value;
-    if(principal==""){
+    if(principal=="" || principal<0){
         alert("Enter a number:")
-    }
-     if(principal<0){
-        alert("Enter a Positive number:")
     }
     else{
 
