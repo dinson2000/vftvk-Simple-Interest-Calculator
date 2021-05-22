@@ -1,16 +1,55 @@
 <html>
     <head>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <div id="main_div">
+            <h1>Simple Interest Calculator</h1>
+            <div style="text-align: center;">
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+                <table style="margin:auto;">
+                    <tr>
+                        <td>Amount</td>
+                        <td><input type="number" id="principal"></td>
+                    </tr>
+                    <tr>
+                        <td>Interest Rate</td>
+                        <td><input min="0" max="15" step="0.1" type="range" onchange="updateTextInput(this.value);" id="rate">&nbsp;<span id="result"></span></td>
+                    </tr>
+                     <tr>
+                        <td>No. of Years</td>
+                        <td><select name="" id="years">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select></td>
+                    </tr>
+                    <tr><td>
+                        <button onclick="compute()">Compute Interest</button>
+                    </td></tr> 
+                    <tr>
+                        <td id="computed">
+                        <p>If you deposit <span id="principal_populate"></span>,</p>
+                        <p>at an interest rate of <span id="rate_populate"></span>,</p>
+                        <p>You will receive an amount of <span id="amount_populate"></span>,</p>
+                        <p>in the year <span id="year_populate"></span></p>
+                    </td>
+                </tr>
+                </table>
+            </div>
+            <footer>
 
-        <button onclick="compute()">Compute</button>
-    </body>
-</html>
+                <p id="copyright">&copy;Everyone Can Get Rich</p>
+            </footer>
+        </div>
+         <script src="script.js"></script>
+        </body>
+        </html>
+        

@@ -1,4 +1,41 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black;
+padding:100px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    color:grey;
+    font-family: Geneva, Verdana, sans-serif;
+}
+div#main_div{
+    padding-top:30px;
+    border-radius:30px;
+    text-align: center;
+    font-weight: bold;
+    /* margin: auto; */
+    /* height: 400px; */
+    background-color: white;
+    
+}
+input,select{
+    margin-left:40px;
+}
+button{
+    margin-top:15px;
+}
+p{
+    margin:0;
 
+}
+#computed{
+    margin-top:10px;
+}
+#computed>p>span{
+    background-color: yellow;
+}
+#copyright{
+    /* margin: 20px 20px 0 20px; */
+    padding: 30px;
+    text-align:left;
+    /* display: none; */
+}
 
